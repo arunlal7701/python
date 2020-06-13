@@ -28,6 +28,6 @@ for ips in ip:
         geodata = response.json()
         country_name = geodata['country_name']
         country_code = geodata['country_code']
-        print('IP is {} and the location is :{:10} {}'.format(ips,country_name,country_code))
+        print('IP is {} and the location is : {:5} country code is {}'.format(ips,country_name,country_code))
     except:
         print('Please enter the valid credentials')
